@@ -8,15 +8,13 @@ namespace CorreosSplit
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            string correos = "Eddimir@dovinet.com;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Edd@dovinet.com;" +
-            "veloz@veloz.com;;hola.com;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;klkdimeave.com;;;" +
+            string emails = "example@example.com;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;example2@example2.com;" +
+            "example3@example3.com;;example4@example4.com;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;example5@example5.com;;;" +
             ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;";
-
-            //string result = String.Join(";",correos.Split(';')
-            //.Where(x=> !string.IsNullOrEmpty(x)).ToArray());
-            //Console.WriteLine(result);
-            string respuesta = SpecialRemoveSpacesOrCharterFromEmail(correos, ';');
+            
+            //response as analysed, in this case by semicolon 
+            //This exercise is for the purpose of the entry to be emails represented in string as our variable emails
+            string response = SpecialRemoveSpacesOrCharterFromEmail(correos, ';');
 
             Console.WriteLine(respuesta);
         }
