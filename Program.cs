@@ -14,7 +14,7 @@ namespace CorreosSplit
             
             //response as analysed, in this case by semicolon 
             //This exercise is for the purpose of the entry to be emails represented in string as our variable emails
-            string response = SpecialRemoveSpacesOrCharterFromEmail(correos, ';');
+            string response = SpecialRemoveSpacesOrCharterFromEmail(emails, ';');
 
             Console.WriteLine(respuesta);
         }
